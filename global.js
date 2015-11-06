@@ -5,8 +5,5 @@ $(document).ready(function(e) {
 });
 
 $(document).ready(function() {
- $("#global_nav_dashboard_link").each(function(){
-   var newUrl = $(this).prop('href').replace('harvard.catalog', 'harvard-catalog-courses');
-   $(this).prop('href', newUrl);
- });
+  $("#global_nav_dashboard_link").prop('href', '/');
 });
