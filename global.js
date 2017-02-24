@@ -7,4 +7,5 @@ $(document).ready(function(e) {
 $(document).ready(function() {
   $("#global_nav_dashboard_link").prop('href', '/');
   $(".ic-app-header__logomark").prop('href', '/');
+  $("div.ic-Login-header__links > a#register_link").remove()  
 });
