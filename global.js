@@ -15,6 +15,6 @@ $(document).ready(function() {
   $(".ic-app-header__logomark").prop('href', '/');
   $("div.ic-Login-header__links > a#register_link").remove()  
     
-  $('div.ic-Login__body').append(loginhelp)
+  $('form#login_form').prepend(loginhelp)
   
 });
