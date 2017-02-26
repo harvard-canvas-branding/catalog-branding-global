@@ -9,7 +9,7 @@ function hu_toggle_fpl() {
 }
 
 $(document).ready(function() {
-  var loginhelp = '<div class="alert alert-warning"><p>If you received an invitation to join a course and are accessing this system for the first time, <a href="#" onclick="hu_toggle_fpl()">click here to complete your account registration process</a> and create a password.</p></div>';
+  var loginhelp = '<div class="alert alert-warning"><p>If you received an invitation to join a course and are accessing this system for the first time, <a href="#" onclick="hu_toggle_fpl()">click here to complete your account registration process</a> and create a password.</p></div><p> </p>';
     
   $("#global_nav_dashboard_link").prop('href', '/');
   $(".ic-app-header__logomark").prop('href', '/');
