@@ -4,8 +4,17 @@ $(document).ready(function(e) {
     $('footer').html(harvardCopy);
 });
 
+function hu_toggle_fpl() {
+    $('#login_forgot_password').click();    
+}
+
 $(document).ready(function() {
+  var loginhelp = '<div class="hu_loginhelp"><p>If you received an invitation to join a course and are accessing this system for the first time, <a href="#" onclick="hu_toggle_fpl()">click here to complete your account registration process</a> and create a password.</p></div>';
+    
   $("#global_nav_dashboard_link").prop('href', '/');
   $(".ic-app-header__logomark").prop('href', '/');
   $("div.ic-Login-header__links > a#register_link").remove()  
+    
+  $('div.ic-Login__body').append(loginhelp)
+  
 });
