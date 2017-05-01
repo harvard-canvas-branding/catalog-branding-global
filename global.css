@@ -1,7 +1,7 @@
 
 .ic-Login__content > .ic-Login-footer > p,
-.ic-Login__content > .ic-Login-footer > #privacy_policy_link,
-.ic-Login__content > .ic-Login-footer > #acceptable_use_policy_link {
+.ic-Login__content > .ic-Login-footer > a#privacy_policy_link,
+.ic-Login__content > .ic-Login-footer > a#acceptable_use_policy_link {
     color: white;
     
 }
