@@ -1,14 +1,7 @@
-.header-branding .logo a {
-    background-image: url('https://s3.amazonaws.com/tlt-static/catalog/branding/global/harvard_logo@2x.png');
-    background-size: 93% auto;
-  }
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5) {
-.header-branding .logo a {
-    background-image: url('https://s3.amazonaws.com/tlt-static/catalog/branding/global/harvard_logo@2x.png');
-    background-size: 93% auto;
-  }
+.ic-Login__content > .ic-Login-footer > p,
+.ic-Login__content > .ic-Login-footer > #privacy_policy_link,
+.ic-Login__content > .ic-Login-footer > #acceptable_use_policy_link {
+    color: white;
+    
 }
