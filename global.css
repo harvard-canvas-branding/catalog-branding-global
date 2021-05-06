@@ -3,5 +3,29 @@
 .ic-Login__content > .ic-Login-footer > p > a#privacy_policy_link,
 .ic-Login__content > .ic-Login-footer > p > a#acceptable_use_policy_link,
 .ic-Login__content > .ic-Login-footer > p > a#accessibility_link {
-    color: white;    
+    color: white;
+}
+
+.hu-hkey-login {
+    border-top: 1px solid black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    color: black;
+    font-size: 1.25em;
+}
+
+.hu-hkey-login a:hover {
+    text-decoration: none;
+}
+
+.hu-hkey-logo {
+    height: .75em;
+    padding-left: 4px;
+    vertical-align: baseline;
+}
+
+.ic-Login__container footer {
+    font-size: .75em;
+    padding-top: 1em;
 }
