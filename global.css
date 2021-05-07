@@ -1,4 +1,8 @@
 
+div.ic-Login__content {
+    border-radius: 12px;
+}
+
 .ic-Login__content > .ic-Login-footer > p,
 .ic-Login__content > .ic-Login-footer > p > a#privacy_policy_link,
 .ic-Login__content > .ic-Login-footer > p > a#acceptable_use_policy_link,

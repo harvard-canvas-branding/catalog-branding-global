@@ -20,7 +20,7 @@ $(document).ready(function(e) {
   $(".ic-app-header__logomark").prop('href', '/');
 
   var login_body = $(".ic-Login__body").html();
-  var hkey_link = "<div class=\"hu-hkey-login\">Or, <a href=\"/login/saml\">log in with <img class=\"hu-hkey-logo\" src=\"https://www.pin1.harvard.edu/cas/themes/harvard/images/HarvardKeyLogo.png\" alt=\"Harvard Key\"/></a></div>";
+  var hkey_link = "<div class=\"hu-hkey-login\">Or, <a href=\"/login/saml\">log in with <img class=\"hu-hkey-logo\" src=\"https://tlt-static-prod.s3.us-east-1.amazonaws.com/images/HarvardKeyLogo.png\" alt=\"Harvard Key\"/></a></div>";
   $(".ic-Login__body").html(login_body+hkey_link);
 
 });
