@@ -141,7 +141,7 @@ function initAddPronounText() {
       however they choose, so we are working to enable that option \
       within Canvas. To learn more about gender, identity, \
       or pronouns and to provide feedback, visit: \
-      <a href=\"https://dib.harvard.edu/gender-pronouns\">\
+      <a href=\"https://dib.harvard.edu/gender-pronouns\" target=\"_blank\">\
       https://dib.harvard.edu/gender-pronouns</a>.\
       ");
 
