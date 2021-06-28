@@ -8,9 +8,9 @@ if (window.ga && ga.loaded) {
 $(document).ready(function(e) {
   var copyYear = new Date().getFullYear();
 
-  var harvardCopy = '<div>Copyright &copy; 2014-' + copyYear + ' The President and Fellows of Harvard College | &nbsp</div>';
-  harvardCopy += '<p><a href="https://harvard.service-now.com/ithelp?id=kb_article&sys_id=9d718485db0d57cc83a2f3f7bf961902" id="acceptable_use_policy_link" target="_blank">Acceptable Use Policy</a> | ';
-  harvardCopy += '<a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy" id="accessibility_link" target="_blank">Accessibility</a> | ';
+  var harvardCopy = '<div>Copyright &copy; 2014-' + copyYear + ' The President and Fellows of Harvard College <span aria-hidden="true">|</span> &nbsp</div>';
+  harvardCopy += '<p><a href="https://harvard.service-now.com/ithelp?id=kb_article&sys_id=9d718485db0d57cc83a2f3f7bf961902" id="acceptable_use_policy_link" target="_blank">Acceptable Use Policy</a> <span aria-hidden="true">|</span> ';
+  harvardCopy += '<a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy" id="accessibility_link" target="_blank">Accessibility</a> <span aria-hidden="true">|</span> ';
   harvardCopy += '<a href="https://harvard.service-now.com/ithelp?id=kb_article&sys_id=3373044ddb4d57cc83a2f3f7bf961909" id="privacy_policy_link" target="_blank">Privacy Policy</a></p>';
   $('footer').html(harvardCopy);
 
@@ -20,8 +20,29 @@ $(document).ready(function(e) {
   $(".ic-app-header__logomark").prop('href', '/');
 
   var login_body = $(".ic-Login__body").html();
-  var hkey_link = "<div class=\"hu-hkey-login\">Or, <a href=\"/login/saml\">log in with <img class=\"hu-hkey-logo\" src=\"https://tlt-static-prod.s3.us-east-1.amazonaws.com/images/HarvardKeyLogo.png\" alt=\"Harvard Key\"/></a></div>";
-  $(".ic-Login__body").html(login_body+hkey_link);
+  var hkey_link = `
+    <div class="hu-hkey-login">
+    Or, <a href="/login/saml" class="hu-hkey-login-link">log in with <img class="hu-hkey-logo" src="https://tlt-static-prod.s3.us-east-1.amazonaws.com/images/HarvardKeyLogo.png" alt="Harvard Key"/></a>
+    <span class="hu-help-icon"><a href="#" onclick="$('.hu-hkey-help').toggle();"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" role="img" focusable="false" aria-label="Help for HarvardKey login">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+    </svg></a></span>
+    </div>
+  `;
+  var hkey_help = `
+    <div class="hu-hkey-help">
+    <p>
+    If you are a HarvardKey holder, you can use the link above to log in to Canvas.
+    </p>
+    <p>
+    If you don't already have a HarvardKey, please continue to log in above with your email and password.
+    </p>
+    </div>
+  `;
+  $(".ic-Login__body").html(login_body+hkey_link+hkey_help);
+
+  $('div.enrollment_link a#register_link').parent().html(hkey_link+hkey_help);
+
 
 });
 
