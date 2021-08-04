@@ -13,10 +13,23 @@ div.ic-Login__content {
 .hu-hkey-login {
     border-top: 1px solid black;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
     font-weight: bold;
     color: black;
     font-size: 1.25em;
+}
+
+.hu-hkey-login-link {
+    border-bottom: 1px solid black;
+}
+
+.hu-help-icon {
+    float: right;
+}
+
+.hu-hkey-help {
+    display: none;
+    color: black;
 }
 
 .hu-hkey-login a:hover {
@@ -32,4 +45,13 @@ div.ic-Login__content {
 .ic-Login__container footer {
     font-size: .75em;
     padding-top: 1em;
+}
+
+.mobileLogin-Header {
+    z-index: 1;
+    background-image: url(https://tlt-static-prod.s3.us-east-1.amazonaws.com/canvas_exed/login_screen_login_logo.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 108px;
+    min-height: 108px;
 }
