@@ -39,6 +39,9 @@ $(document).ready(function(e) {
   `;
   $(".ic-Login__body").append(hkey_link);
 
+  // for mobile:
+  $('div.enrollment_link a#register_link').parent().html(hkey_link);
+
 });
 
 
