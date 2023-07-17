@@ -1,10 +1,4 @@
 
-if (window.ga && ga.loaded) {
-    ga('create', 'UA-49649810-11', 'auto', 'huTracker');
-    ga('huTracker.set', 'anonymizeIp', true);
-    ga('huTracker.send', 'pageview');
-}
-
 $(document).ready(function(e) {
   var copyYear = new Date().getFullYear();
 
