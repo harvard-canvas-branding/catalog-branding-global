@@ -4,6 +4,11 @@ div.ic-Login__content {
 }
 
 .ic-Login__content > .ic-Login-footer > p,
+.ic-Login__content > .ic-Login-footer > div > a#acceptable_use_policy_link,
+.ic-Login__content > .ic-Login-footer > div > a#accessibility_link,
+.ic-Login__content > .ic-Login-footer > div > a#digital_accessibility_link,
+.ic-Login__content > .ic-Login-footer > div > a#privacy_policy_link,
+.ic-Login__content > .ic-Login-footer > p > a#digital_accessibility_link,
 .ic-Login__content > .ic-Login-footer > p > a#privacy_policy_link,
 .ic-Login__content > .ic-Login-footer > p > a#acceptable_use_policy_link,
 .ic-Login__content > .ic-Login-footer > p > a#accessibility_link {
