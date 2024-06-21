@@ -11,7 +11,7 @@ $(document).ready(function(e) {
           }
         // Do not add footer content on accounts settings page.
         if (window.location.href.match(/\/accounts\/\d+\/settings.*/)) {
-        return;
+            return;
         }
 
         const copyYear = new Date().getFullYear();
