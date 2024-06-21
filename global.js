@@ -5,6 +5,14 @@ $(document).ready(function(e) {
         if (window.location.href.match(/.*\/login\/oauth2\//)) {
             return;
         }
+        // Do not add footer content courses settings page.
+        if (window.location.href.match(/\/courses\/\d+\/settings.*/)) {
+            return;
+          }
+        // Do not add footer content on accounts settings page.
+        if (window.location.href.match(/\/accounts\/\d+\/settings.*/)) {
+            return;
+        }
 
         const copyYear = new Date().getFullYear();
 
