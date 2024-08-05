@@ -14,6 +14,11 @@ $(document).ready(function(e) {
             return;
         }
 
+        // Do not add footer content on content migration page.
+        if (window.location.href.match(/\/courses\/\d+\/content_migrations.*/)) {
+            return;
+        }
+
         const copyYear = new Date().getFullYear();
 
         const harvardCopy =
