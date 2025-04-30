@@ -15,10 +15,12 @@ div.ic-Login__content {
     color: white;
 }
 
+.hu-help-icon {
+    float: right;
+}
+
 .hu-hkey-login {
-    border-top: 1px solid black;
-    padding-top: 1em;
-    padding-bottom: .5em;
+    padding-top: .5em;
     font-weight: bold;
     color: black;
     font-size: 1.25em;
@@ -26,10 +28,6 @@ div.ic-Login__content {
 
 .hu-hkey-login-link {
     border-bottom: 1px solid black;
-}
-
-.hu-help-icon {
-    float: right;
 }
 
 .hu-hkey-help {
@@ -45,6 +43,40 @@ div.ic-Login__content {
     height: .75em;
     padding-left: 4px;
     vertical-align: baseline;
+}
+
+.hu-guest-login {
+    padding-bottom: .5em;
+    font-weight: bold;
+    color: black;
+    font-size: 1.25em;
+}
+
+.hu-guest-login-link {
+    border-bottom: 1px solid black;
+}
+
+.hu-guest-help {
+    display: none;
+    color: black;
+}
+
+.hu-guest-login a:hover {
+    text-decoration: none;
+}
+
+.other-logins {
+    border-top: 1px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding-top: .5em;
+}
+
+.or {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 .ic-Login__container footer {
