@@ -19,6 +19,11 @@ $(document).ready(function(e) {
             return;
         }
 
+        // Do not add footer content on assignments pages.
+        if (window.location.href.match(/\/courses\/\d+\/assignments.*/)) {
+            return;
+        }
+
         const copyYear = new Date().getFullYear();
 
         const harvardCopy =
