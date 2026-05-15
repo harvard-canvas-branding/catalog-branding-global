@@ -86,7 +86,7 @@ div.ic-Login__content {
 
 .mobileLogin-Header {
     z-index: 1;
-    background-image: url(https://tlt-static-prod.s3.us-east-1.amazonaws.com/canvas_exed/login_screen_login_logo.png) !important;
+    background-image: url(https://static.tlt.harvard.edu/canvas_exed/login_screen_login_logo.png) !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 300px 108px;
