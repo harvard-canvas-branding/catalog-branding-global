@@ -99,8 +99,10 @@ $(document).ready(function(e) {
   $(".ic-Login__body").append(hkey_link);
 
 
-  // for mobile:
-  $('div.enrollment_link a#register_link').parent().html(hkey_link);
+  // for mobile login page
+  if ($('#f1_card #login_form').length > 0 && $('.ic-Login__body').length === 0) {
+    $('#login_form .forgotBlock').after(hkey_link);
+  }
 
 });
 
