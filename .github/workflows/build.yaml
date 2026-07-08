@@ -24,8 +24,14 @@ jobs:
           directory: './css' # Adjust to your asset directory
           output: './assets'
 
-      - name: Upload Release Asset
+      - name: Upload Release JS Asset
         uses: actions/upload-artifact@v7
         with:
-          path: './assets'
+          path: './assets/global.min.js'
+          archive: false
+
+      - name: Upload Release CSS Asset
+        uses: actions/upload-artifact@v7
+        with:
+          path: './assets/global.min.css'
           archive: false
