@@ -24,6 +24,11 @@ $(document).ready(function(e) {
             return;
         }
 
+        // Do not add footer content on item bank pages.
+        if (window.location.href.match(/\/courses\/\d+\/banks.*/)) {
+            return;
+        }
+
         const copyYear = new Date().getFullYear();
 
         const harvardCopy =
