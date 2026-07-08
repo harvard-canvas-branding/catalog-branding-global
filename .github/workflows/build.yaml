@@ -1,0 +1,31 @@
+name: Minify and Upload Assets
+on:
+  release:
+    types: [published]
+
+  workflow_dispatch:
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Auto minify JS files
+        uses: nizarmah/auto-minify@v3
+        with:
+          directory: './js' # Adjust to your asset directory
+          output: './assets'
+
+      - name: Auto minify CSS files
+        uses: nizarmah/auto-minify@v3
+        with:
+          directory: './css' # Adjust to your asset directory
+          output: './assets'
+
+      - name: Upload Release Asset
+        uses: actions/upload-artifact@v7
+        with:
+          path: './assets'
+          archive: false
